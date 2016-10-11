@@ -1,9 +1,9 @@
 package com.example.controller;
 
-import javax.validation.Valid;
-
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+
+import javax.validation.Valid;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +27,7 @@ public class TestController {
 	
 	@RequestMapping(value = "hello", method = RequestMethod.POST)
 	@ApiOperation(value = "测试输出hello world",httpMethod = "POST")
-	public String hello(@Valid @RequestBody TestRequestModel model){
+	public String hello(@Valid @RequestBody TestRequestModel model) {
 		try{
 			
 		}catch(Exception e){

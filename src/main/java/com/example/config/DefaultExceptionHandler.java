@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
@@ -29,7 +30,7 @@ public class DefaultExceptionHandler extends ResponseEntityExceptionHandler {
 			return new ResponseEntity<Object>(ToJsonUtil.exceptionToResult(ex.getMessage()), new HttpHeaders(), HttpStatus.FORBIDDEN);
 		}
 	}
-
+	
 	@Override
 	protected ResponseEntity<Object> handleExceptionInternal(Exception ex, Object body, HttpHeaders headers, HttpStatus status, WebRequest request) {
 		if (HttpStatus.INTERNAL_SERVER_ERROR.equals(status)) {

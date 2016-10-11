@@ -21,3 +21,5 @@ PrintServer.db
 *settings
 *classpath
 *externalToolBuilders
+
+*.log
