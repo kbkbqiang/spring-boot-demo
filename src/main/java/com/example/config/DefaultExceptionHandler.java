@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import com.example.utils.ToJsonUtil;
 
-@ControllerAdvice
+//@ControllerAdvice
 public class DefaultExceptionHandler extends ResponseEntityExceptionHandler {
 
 	@ExceptionHandler({ Exception.class })

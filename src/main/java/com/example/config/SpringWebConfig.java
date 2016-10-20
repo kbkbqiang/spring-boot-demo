@@ -23,7 +23,7 @@ import com.example.filter.CharsetFilter;
  * @date: 2016年8月22日 下午3:45:50
  */
 @Configuration
-@EnableWebMvc
+//@EnableWebMvc
 @ComponentScan(basePackages = { "com.example.controller", "com.example.service" })
 public class SpringWebConfig extends WebMvcConfigurerAdapter {
 	
